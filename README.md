@@ -1,42 +1,48 @@
-# test-1
+Функционал:
+...
+--
 
-This template should help get you started developing with Vue 3 in Vite.
+Технологии:
+Vue 3;
+TypeScript;
+Pinia - управление состоянием;
+Vite - сборка проекта;
+TailwindCSS, SCSS - стилизация;
+--
 
-## Recommended IDE Setup
+Установка и запуск:
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+# Клонируем репозиторий
 
-## Recommended Browser Setup
+git clone https://github.com/dahilace/test-1.git;
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+cd test-1;
 
-## Type Support for `.vue` Imports in TS
+# Устанавливаем зависимости
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+npm install;
 
-## Customize configuration
+# Запускаем проект в dev-режиме
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+npm run dev;
 
-## Project Setup
+# Сборка для продакшена
 
-```sh
-npm install
-```
+npm run build;
 
-### Compile and Hot-Reload for Development
+# Предпросмотр собранного проекта
 
-```sh
-npm run dev
-```
+npm run preview;
 
-### Type-Check, Compile and Minify for Production
+Структура проекта:
 
-```sh
-npm run build
-```
+src/
+assets/ - Стили, иконки;
+components/ - Компоненты приложения;
+stores/ - Pinia store (todos.ts);
+App.vue - Главный компонент;
+main.ts - Точка входа;
+--
+
+Лицензия:
+MIT — используй свободно;
