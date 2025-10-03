@@ -1,12 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SvgIcon from './components/SvgIcon.vue';
+import ShellHeader from './components/shell/ShellHeader.vue';
+import ShellFooter from './components/shell/ShellFooter.vue';
+
+import CommonHeading from './components/common/CommonHeading.vue';
+import CommonHint from './components/common/CommonHint.vue';
+import CommonList from './components/common/CommonList.vue';
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to
-    read the documentation
-  </p>
+  <div class="wrapper flex flex-col min-h-screen">
+    <shell-header></shell-header>
+    <main>
+      <common-heading></common-heading>
+      <common-hint>Подсказка</common-hint>
+      <hr>
+      <common-list></common-list>
+    </main>
+    <shell-footer class="mt-auto"></shell-footer>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
